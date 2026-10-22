@@ -1,0 +1,29 @@
+{
+  "name": "muse-frontends",
+  "version": "0.2.0",
+  "description": "Single-purpose front ends for Muse Vault templates and collections. Fork it, point it at a Vault or your own config, deploy.",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "node scripts/prepare.mjs && vite",
+    "sync:vault": "node scripts/sync-vault.mjs",
+    "build": "node scripts/prepare.mjs && vite build",
+    "test": "vitest run",
+    "preview": "vite preview"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "jsdom": "^25.0.1",
+    "vite": "^5.4.21",
+    "vitest": "^2.1.9"
+  },
+  "private": false
+}

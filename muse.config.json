@@ -1,0 +1,10 @@
+{
+  "title": "Muse Frontends",
+  "tagline": "Single-purpose front ends for Muse Vault templates and collections.",
+  "vault": {
+    "enabled": true,
+    "url": "https://vault.stevepeeleii.com",
+    "collections": [],
+    "templates": []
+  }
+}

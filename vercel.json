@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": { "api/run.js": { "includeFiles": "{interfaces/**,data/**,muse.config.json,src/lib/**}" } }
+}
