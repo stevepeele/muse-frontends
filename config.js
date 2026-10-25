@@ -1,2 +1,2 @@
-/* Muse Frontends — site config. PostHog key filled by Lauren when issued. */
-window.MUSEFRONTENDS_CONFIG = { posthogKey: "phc_tN5yyT4HZcxr9XWPnMrEtPrD7gH2rnDiV59BKJsVwirX" };
+/* Muse Frontends site config. Regenerated at build by scripts/write-config.sh from env vars. */
+window.MUSEFRONTENDS_CONFIG = { posthogKey: "" };

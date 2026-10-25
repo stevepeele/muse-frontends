@@ -1,1 +1,9 @@
-{"functions":{"api/run.js":{"includeFiles":"interfaces/**"}}}
+{
+  "functions": {
+    "api/run.js": {
+      "includeFiles": "interfaces/**"
+    }
+  },
+  "buildCommand": "sh scripts/write-config.sh",
+  "outputDirectory": "."
+}
