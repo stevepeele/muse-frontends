@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muse Frontends — Single-purpose front ends for your Muse templates</title>
+  <meta name="description" content="Single-purpose front ends for your Muse templates. One prompt in, the template executed, zero chat chrome.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="analytics.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <span class="brand">Muse Frontends</span>
+      <h1>Better than a chat box.</h1>
+      <p class="lede">Single-purpose front ends for your Muse templates. One prompt in, the template executed, zero chat chrome.</p>
+    </header>
+
+    <main>
+      <div class="cards">
+        <a class="card" href="interface.html?i=deep-research" style="--accent:#e8b34b">
+          <div class="kicker">Workflows</div>
+          <h2>Deep Research</h2>
+          <p>A multi-source investigation workflow for thorough, cited research. Type the question, get the brief.</p>
+          <span class="go">Open →</span>
+        </a>
+        <a class="card" href="interface.html?i=cold-email-surgeon" style="--accent:#4da3ff">
+          <div class="kicker">Sales</div>
+          <h2>The Cold Email Surgeon</h2>
+          <p>Cold emails built to survive the 8-second delete. Paste a draft or describe the prospect, get the rewrite.</p>
+          <span class="go">Open →</span>
+        </a>
+        <a class="card" href="interface.html?i=second-in-command" style="--accent:#3ddc84">
+          <div class="kicker">System Prompts</div>
+          <h2>Second-in-Command</h2>
+          <p>A chief-of-staff system prompt that turns Muse into your operator. Give it any task, get the finished result.</p>
+          <span class="go">Open →</span>
+        </a>
+      </div>
+
+      <section class="how">
+        <h2>How it works</h2>
+        <ul class="steps">
+          <li><span class="n">1</span><span class="t"><strong>Pick an interface.</strong> Each one is a single Muse template, given a single job.</span></li>
+          <li><span class="n">2</span><span class="t"><strong>Type one prompt.</strong> No system-prompt pasting, no setup, no chat history to manage.</span></li>
+          <li><span class="n">3</span><span class="t"><strong>The template runs.</strong> The interface config is the template — it executes on the deployer's API key and streams the result back.</span></li>
+        </ul>
+      </section>
+
+      <section class="deploy">
+        <h2>Run your own</h2>
+        <p style="color:var(--muted); font-size:15.5px; max-width:36em;">This whole thing is a self-deployable product. Fork it, point it at your own templates, put it on your own domain.</p>
+        <ol>
+          <li><strong>Fork the repo</strong> and import it into Vercel — or hit the Deploy button.</li>
+          <li><strong>Set <code>ANTHROPIC_API_KEY</code></strong> in the Vercel project environment. Your key, your bill — runs cost a few cents each.</li>
+          <li><strong>Add your own interface:</strong> copy an <code>interfaces/*.json</code> file, point <code>system_prompt</code> at your side-chat or template definition, redeploy. No code changes.</li>
+          <li><strong>Point your domain</strong> at the deployment. Done.</li>
+        </ol>
+        <p style="color:var(--muted); font-size:15px;">Full instructions in the <a href="https://github.com/stevepeele/muse-frontends/blob/main/README.md">README</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site">
+      <span>Muse Frontends — one prompt in, the template executed.</span>
+      <span>Templates from <a href="https://vault.stevepeeleii.com">Muse Vault</a></span>
+    </footer>
+  </div>
+</body>
+</html>

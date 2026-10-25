@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muse Frontends</title>
+  <meta name="description" content="A single-purpose front end for one Muse template. One prompt in, the template executed.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="analytics.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site" style="padding-top:32px;">
+      <a class="back" href="index.html">← All interfaces</a>
+      <div class="iface-head">
+        <div class="kicker" id="kicker">Interface</div>
+        <h1 id="title">Loading…</h1>
+        <p class="lede" id="tagline"></p>
+      </div>
+    </header>
+
+    <main>
+      <div class="error-box" id="errorBox" role="alert"></div>
+
+      <div class="prompt-block">
+        <label for="prompt" id="promptLabel">Your prompt</label>
+        <textarea id="prompt" rows="4" placeholder=""></textarea>
+        <div class="examples">
+          <div class="ex-label">Try one:</div>
+          <div class="chips" id="chips"></div>
+        </div>
+        <div class="run-row">
+          <button class="run" id="runBtn">Run</button>
+          <span class="hint" id="hint">Streams the result as it's generated.</span>
+        </div>
+      </div>
+
+      <div class="output-wrap">
+        <div class="output-label">
+          <span>Output</span>
+          <button id="copyBtn" style="display:none;">Copy</button>
+        </div>
+        <div class="output" id="output" aria-live="polite">
+          <span class="placeholder">The result lands here.</span>
+        </div>
+      </div>
+
+      <div class="iface-foot" id="ifaceFoot"></div>
+    </main>
+
+    <footer class="site">
+      <span>Muse Frontends — one prompt in, the template executed.</span>
+      <span>Templates from <a href="https://vault.stevepeeleii.com">Muse Vault</a></span>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
